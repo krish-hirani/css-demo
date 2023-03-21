@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<style>
+			ul 
+			{
+			  list-style-type: ;
+			  margin: 2;
+			  padding: 2;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li 
+			{
+			  float: left;
+			}
+			li a, .dropbtn 
+			{
+			  display: inline-block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover, .dropdown:hover .dropbtn 
+			{
+			  background-color: red;
+			}
+			li.dropdown 
+			{
+			  display: inline-block;
+			}
+			.dropdown-content 
+			{
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+			.dropdown-content a 
+			{
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;
+			}
+			.dropdown-content a:hover 
+			{
+			background-color: #f1f1f1;
+			}
+			.dropdown:hover .dropdown-content 
+			{
+			  display: block;
+			}
+			.new
+			{
+				width:50%;
+				height:50%;
+				margin-left:250 px;		
+				opacity:70%;
+			}
+			.new:hover
+			{
+				margin-left:250px;
+				opacity:100%;
+				margin-top:50px;	
+				transform:scale(1.1);
+				transition-duration:5s;
+			}
+			</style>
+	</head>
+		<body>
+			<ul>
+			  <li><a href="https://source.unsplash.com/random/20000x20000/?home">Home</a></li>
+			  <li><a href="https://source.unsplash.com/random/20000x20000/?knowledge">About</a></li>
+			  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Image</a>
+		<div class="dropdown-content">
+				<a href="https://source.unsplash.com/random/20000x20000/?ai">AI</a>
+				<a href="https://source.unsplash.com/random/20000x20000/?robot">ROBOT</a>
+				<a href="https://source.unsplash.com/random/20000x20000/?computer">COMPUTER</a>
+		</div>
+				</li>
+			</ul>
+			<img src="https://source.unsplash.com/random/20000x20000/?nature" class="new">
+		</body>
+</html>
+
+
